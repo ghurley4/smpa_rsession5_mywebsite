@@ -4,8 +4,4 @@ title: "More Stuff About Me"
 
 My name is Graham Hurley and I am a journalist. I was born in Atlanta, GA where I lived most of my life unti college. I attended college at GWU and studied Journalism as well as Spanish. 
 
-```{r}
-1 + 1 
 
-
-```
