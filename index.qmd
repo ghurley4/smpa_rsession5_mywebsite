@@ -1,31 +1,27 @@
 ---
-title: "Aaron M. Kessler"
+title: "Graham Hurley"
 about:
   template: jolla
   image: testimage.jpg
   links:
     - icon: twitter
       text: twitter
-      href: https://twitter.com/akesslerdc
+      href: https://twitter.com/ghurles4
     - icon: github
       text: Github
-      href: https://github.com/amkessler
+      href: https://github.com/ghurley4/
 ---
 
-Hi, I'm Aaron and I'm a journalist at the AP in Washington, DC. I like data, the ocean and F1 racing. I've got two little ones and enjoy watching them grow up.
+Hi, I'm Graham and I am a senior at GWU. 
 
 ## Education
 
-University of Missouri-Columbia
-
-Columbia University asdfasdfsa
-
-Washington University in St. Louis
+The George Washington University 
+B.A. in Journalism/Mass Communications and Spanish
 
 ## Skills
 
 Reporting and Writing
+Production
+Adobe Suite
 
-Data Analysis
-
-FOIA laws

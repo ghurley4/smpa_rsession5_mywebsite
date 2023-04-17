@@ -4,11 +4,11 @@ project:
 
 website:
   page-footer: 
-    left: "Copyright 2023, Aaron Kessler" 
+    left: "Copyright 2023, Graham Hurley" 
     right: 
       - icon: github
         href: https://github.com/
-  title: "Aaron's Website"
+  title: "Graham's Website"
   navbar:
     left:
       - href: index.qmd
@@ -16,6 +16,8 @@ website:
       - about.qmd
       - portfolio.qmd
       - walkthrough.qmd
+      - Article.qmd
+      - Academic Paper.qmd
       
 
 
