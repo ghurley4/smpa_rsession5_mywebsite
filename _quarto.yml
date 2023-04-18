@@ -19,6 +19,7 @@ website:
       - Article.qmd
       - Academic Paper.qmd
       - Mapping.qmd
+      - virginia_election_project_youranalysis.qmd
 
 
 format:

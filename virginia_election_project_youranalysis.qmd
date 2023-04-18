@@ -1,0 +1,69 @@
+---
+title: "Virginia Election Project"
+author: "Graham Hurley"
+execute:
+  echo: true
+format:
+  html:
+    self-contained: true
+    code-tools: true
+---
+
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+
+
+library(tidyverse)
+library(janitor)
+library(kableExtra)
+library(here)
+options(scipen = 999)
+options(stringsAsFactors = FALSE)
+
+
+#load saved joined data file from previous script
+joined_vacomparison <- readRDS(here("processed_data", "joined_vacomparison.rds"))
+
+
+
+```
+
+
+# Comparing Virgnia Gov vs. Prez
+
+
+
+```{r}
+
+head(joined_vacomparison)
+
+
+```
+
+```{r}
+prez_2020 %>% 
+  mutate(
+    biden_pct = janitor::round_half_up(biden / total_votes_2021_prez * 100, 2),
+    trump_pct = janitor::round_half_up(trump / total_votes_2021_prez * 100, 2)
+  )
+
+```
+
+```{r}
+gov_2021_wide <- gov_2021 %>% 
+  pivot_wider(names_from = ballot_name, values_from = c(votes, percentage))
+
+gov_2021_wide <- gov_2021_wide %>% 
+  clean_names()
+
+gov_2021_wide <- gov_2021_wide %>% 
+  rename(
+    youngkin = votes_glenn_a_youngkin,
+    mcauliffe = votes_terry_r_mc_auliffe,
+    pct_youngkin = percentage_glenn_a_youngkin,
+    pct_mcauliffe = percentage_terry_r_mc_auliffe
+  )
+
+head(gov_2021_wide)
+```
+
