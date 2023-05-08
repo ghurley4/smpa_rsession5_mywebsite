@@ -12,7 +12,7 @@ about:
       href: https://github.com/ghurley4/
 ---
 
-Hi, I'm Graham and I am a senior at GWU. 
+Hi, I'm Graham and I am a senior at The George Washington University.  
 
 ## Education
 
@@ -21,7 +21,5 @@ B.A. in Journalism/Mass Communications and Spanish
 
 ## Skills
 
-Reporting and Writing
-Production
-Adobe Suite
+Reporting, Newswriting, Filming, Adobe Suite
 
