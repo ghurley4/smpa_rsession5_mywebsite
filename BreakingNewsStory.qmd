@@ -42,20 +42,19 @@ prez_2020
   counties_trump_won <- sum(prez_2020$trump > prez_2020$biden)
 ```
 
-```{r}
-# BREAKING NEWS: Virginia Flips Blue
-#In a historic election, the state of Virginia has declared its results in the 2020 Presidential Election. With data sourced from the Virginia Department of Elections, the final numbers reveal an intriguing outcome that has captured the nation's attention.
 
-#After a fierce battle for Virginia's 13 electoral votes, Democratic nominee Joe Biden has emerged as the winner. The analysis of the data shows that Biden secured a total of sum(prez_2020$biden) votes which is 2,413,568 votes. Republican incumbent candidate Donald Trump received sum(prez_2020$trump) votes which is 1,962,430 votes in total. These results indicate a victory for Biden with sum(prez_2020$biden) - sum(prez_2020$trump) more votes than his opponent. These results indicate a victory for Biden with 451,138 more votes than his opponent.
+BREAKING NEWS: Virginia Flips Blue
 
-#The election data further highlights the geographical distribution of votes across the state. Biden's support was concentrated in urban areas, such as Alexandria and Richmond, where he secured a significant lead. On the other hand, Trump had a stronghold in rural regions, including counties like Franklin and Highland.
+In a historic election, the state of Virginia has declared its results in the 2020 Presidential Election. With data sourced from the Virginia Department of Elections, the final numbers reveal an intriguing outcome that has captured the nation's attention.
 
-#According to the county-level results, Biden won in sum(prez_2020$biden > prez_2020$trump) counties, while Trump emerged victorious in sum(prez_2020$trump > prez_2020$biden) counties. These numbers showcase the diversity and political landscape of Virginia, with pockets of support for both candidates throughout the state.
+After a fierce battle for Virginia's 13 electoral votes, Democratic nominee Joe Biden has emerged as the winner. The analysis of the data shows that Biden secured a total of `r biden_votes` votes in a historic swing. Republican incumbent candidate Donald Trump received `r trump_votes`. These results indicate a victory for Biden with `r vote_difference` more votes than his opponent. This is a historically close election for the state of Virginia.
 
-#The voter turnout in Virginia was impressive, with 4,036,654 individuals exercising their right to vote. This represents a 74.54% turnout of the eligible population in the state. The high voter participation in this election can be attributed to the significant efforts made by election officials to ensure accessible voting options, including early voting and mail-in ballots. Virginia has revolutionized its voting systems in recent years making it easier for everyday citizens to vote. 
+The election data further highlights the geographical distribution of votes across the state. Biden's support was concentrated in urban areas, such as Alexandria and Richmond, where he secured a significant lead. On the other hand, Trump had a stronghold in rural regions, including counties like Franklin and Highland.
 
-# Virginia's election results play a vital role in shaping the national political landscape. Historically, the state has been a battleground, but recent elections have shown a Democratic shift. Biden's win in Virginia inches him closer to the threshold of 270 electoral votes required to win the presidency.
+According to the county-level results, Biden won in `r counties_biden_won` counties, while Trump emerged victorious in `r counties_trump_won` counties. These numbers showcase the diversity and political landscape of Virginia, with pockets of support for both candidates throughout the state.
 
-# Virginia's election outcome serves as a significant milestone in the 2020 Presidential Election. Virginia is consistently a key battleground state and it was exptected that Trump would win this state prior to the election. 
+The voter turnout in Virginia was impressive, with 4,036,654 individuals exercising their right to vote. This represents a 74.54% turnout of the eligible population in the state. The high voter participation in this election can be attributed to the significant efforts made by election officials to ensure accessible voting options, including early voting and mail-in ballots. Virginia has revolutionized its voting systems in recent years making it easier for everyday citizens to vote.
 
-```
+Virginia's election results play a vital role in shaping the national political landscape. Historically, the state has been a battleground, but recent elections have shown a Democratic shift. Biden's win in Virginia inches him closer to the threshold of 270 electoral votes required to win the presidency.
+
+Virginia's election outcome serves as a significant milestone in the 2020 Presidential Election. Virginia is consistently a key battleground state and it was expected that Trump would win this state prior to the election. Biden secures a monumental victory by winning Virginia in the 2020 presidential election. 
