@@ -1,0 +1,84 @@
+---
+title: "JoinTutorial"
+editor: visual
+---
+
+```{r}
+#It is often necessary to combine datasets with similar or common variables. This is especially common in political datasets and voting data. The join function in Rstudio allows us to streamline this process. Here, we will show you how to use the join function and show you some examples using a public dataset. 
+
+
+```
+
+```{r}
+#Before hopping into our dates we need to load our necessary packages. The RStudio package that allows us to manipulate data and join datasets together is the “dplyr” package. Input this command into RStudio to install the package: 
+
+install.packages("dplyr")
+
+
+```
+
+```{r}
+# To load the dplyr package input this command below: 
+
+library(dplyr)
+
+```
+
+```{r}
+# We will be using the “mtcars” dataset that is available in RStudio. It is a dataset that compiles information about various car models. 
+
+#The join function in the “dplyr” package is shown as ‘join()’ and its basic syntax is as follows: 
+
+# join(x, y, by = "common_variable", type = "join_type")
+
+# In this command: 
+#	- x and y are the datasets that would be joined 
+#	- by specifies the common variable to join together 
+#	- type specifies the type of join that would be used. There are four kinds of join commands: inner, left, right and full. It is an optional addition to the syntax and defaults to inner join if not specified. 
+
+#One of the join types has to be specified in order for the command to be run, the funciton join() on its own will not work. 
+
+# Now here are some examples of the join function using the mtcars dataset: 
+```
+
+```{r}
+# First, load the mtcars dataset
+data(mtcars)
+
+# Create a subset of the mtcars dataset. 
+df1 <- mtcars[, c("mpg", "cyl")]
+
+# Create a second subset of mtcars dataset
+df2 <- mtcars[, c("mpg", "hp")]
+
+# Since we are only usin the mtcars dataset in this example, we have to create subsets of the mtcars dataset in order to show how the join function works. 
+
+# Next, use the inner_join command to join the data subsets together. Next, we create two subsets of the dataset: df1 containing the columns "mpg" and "cyl", and df2 containing the columns "mpg" and "hp". The mpg column refers to mile per gallon and fuel efficieny for each car model. The "cyl" variable refers to the number of cylinders in each car model. The inner_join function below will return only the matching records from both data subsets. The resulting output will show the "cyl" and "mpg" columns side by side. 
+
+inner_join(df1, df2, by = "mpg")
+
+```
+
+```{r}
+# Here is another example using the left_join command. By using the left_join() function and specifying the two datasets and the common variable (mpg), we obtain an output that includes all rows from df1 and the columns "cyl" and "hp" from df2 alongside. If there are no matches in df2 for a particular value of "mpg" in df1, NAs will appear in the "hp" column:  
+
+left_join(df1, df2, by = "mpg")
+
+```
+
+```{r}
+# Here is an example using the right_join command. By using the right_join() function and specifying the two datasets and the common variable (mpg), we obtain an output that includes all rows from df2 and the columns "cyl" and "hp" from df1 alongside. If there are no matches in df1 for a particular value of "mpg" in df2, NAs will appear in the "cyl" column: 
+
+right_join(df1, df2, by = "mpg")
+```
+
+```{r}
+#Finally use the full_join command. Using the full_join() function and specifying the two datasets and the common variable (mpg), we obtain an output that includes all rows from both df1 and df2, with the columns "cyl" and "hp" side by side. In cases where there are no matches for a particular value of "mpg" in either dataset, NAs will appear in the respective column:
+
+full_join(df1, df2, by = "mpg")
+
+```
+
+```{r}
+#In conclusion, the join command is an incredibly useful tool to combine datsets with common variables together. By understanding the syntax of the four join commands you can perform complex data analysis. 
+```

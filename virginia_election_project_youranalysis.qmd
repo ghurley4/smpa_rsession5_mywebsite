@@ -20,6 +20,9 @@ library(here)
 options(scipen = 999)
 options(stringsAsFactors = FALSE)
 
+library(knitr)
+install.packages("jsonlite")
+
 
 #load saved joined data file from previous script
 joined_vacomparison <- readRDS(here("processed_data", "joined_vacomparison.rds"))
@@ -28,12 +31,17 @@ joined_vacomparison <- readRDS(here("processed_data", "joined_vacomparison.rds")
 
 ```
 
+```{r}
+library(jsonlite)
+```
+
 
 # Comparing Virgnia Gov vs. Prez
 
 
 
 ```{r}
+prez_2020 <- read_csv("processed_data/va_2020_prez_cleaned.csv")
 
 head(joined_vacomparison)
 
@@ -46,6 +54,46 @@ prez_2020 %>%
     biden_pct = janitor::round_half_up(biden / total_votes_2021_prez * 100, 2),
     trump_pct = janitor::round_half_up(trump / total_votes_2021_prez * 100, 2)
   )
+
+```
+
+```{r}
+jsonfile <- "raw_data/va_gov_json_archived.json"
+
+#using jsonlite package function fromJSON()
+this.content <- fromJSON(jsonfile)
+
+#dataframe from just the 6 content 
+content_df <- as.data.frame(this.content[[6]])
+```
+
+
+```{r}
+results <- content_df %>%
+  unnest(cols = Candidates)
+
+head(results)
+```
+
+
+```{r}
+results <- results %>%
+  unnest(cols = Locality)
+
+head(results)
+```
+
+
+
+```{r}
+gov_2021 <- results %>% 
+  clean_names() %>% 
+  select(-precincts_reporting,
+         -precincts_participating,
+         -last_modified,
+         -ballot_order)
+
+head(gov_2021)
 
 ```
 

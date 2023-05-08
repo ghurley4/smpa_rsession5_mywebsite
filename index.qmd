@@ -2,7 +2,7 @@
 title: "Graham Hurley"
 about:
   template: jolla
-  image: testimage.jpg
+  image: photo1.jpg
   links:
     - icon: twitter
       text: twitter

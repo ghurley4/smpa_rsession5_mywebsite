@@ -20,6 +20,8 @@ website:
       - Academic Paper.qmd
       - Mapping.qmd
       - virginia_election_project_youranalysis.qmd
+      - JoinTutorial.qmd
+      
 
 
 format:
