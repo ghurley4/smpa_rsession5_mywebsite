@@ -4,12 +4,8 @@ title: "Portfolio"
 
 Hi there this is my portfolio page!
 
-## Voting Rights Story
+## MLB Story for CNN
 
-This [story](https://apnews.com/) from the Associated Press dealt with voting rights issues in Texas in the wake of laws designed to make voting access more difficult.
+I helped to film some of CNN's digital reporters to write this [story](https://www.cnn.com/2023/03/30/us/mlb-pitch-clock-batters-dg/index.html) about the MLB pitch clock rule change.
 
-[![](https://storage.googleapis.com/afs-prod/media/76b879c7c4d74d46bfc10fa38564184b/1000.webp){fig-alt="This is showing a test image of nothing related to this actual story"}](https://apnews.com/)
-
-## Election Night Coverage
-
-Here is a story that [captured the moment of victory](https://apnews.com/) for candidate TKTK in the 2022 general election.
+![](Screenshot%202023-05-09%20at%202.21.16%20AM.png)

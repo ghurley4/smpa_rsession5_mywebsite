@@ -1,0 +1,8 @@
+---
+title: "Resume"
+editor: visual
+---
+
+Here is the most recent version of my resume:
+
+![](Graham_Hurley_2023_Resume_Final.pdf)

@@ -16,6 +16,7 @@ website:
       - about.qmd
       - portfolio.qmd
       - Article.qmd
+      - Resume.qmd
       - Academic Paper.qmd
       - Mapping.qmd
       - virginia_election_project_youranalysis.qmd
