@@ -2,10 +2,28 @@
 title: "Portfolio"
 ---
 
-Hi there this is my portfolio page!
+Hi, this this is my portfolio page!
 
-## MLB Story for CNN
+Here are the stories I worked on as a production intern with CNN's Digital Video News department
 
-I helped to film some of CNN's digital reporters to write this [story](https://www.cnn.com/2023/03/30/us/mlb-pitch-clock-batters-dg/index.html) about the MLB pitch clock rule change.
+[How the MLB pitch clock became a batter\'s problem](https://www.cnn.com/2023/03/30/us/mlb-pitch-clock-batters-dg/index.html)
 
 ![](Screenshot%202023-05-09%20at%202.21.16%20AM.png)
+
+['An illegal agreement': Video shows Trump's lawyer questioned hush money payment back in 2018](https://www.cnn.com/videos/politics/2023/03/22/joe-tacopina-trump-lawyer-stormy-daniels-orig-gh.cnn)
+
+![](Screenshot%202023-06-05%20at%2011.20.44%20PM.png)
+
+[Buttigieg mocked by Pence for 'maternity leave'. This was his husband's response](https://www.cnn.com/videos/politics/2023/03/16/buttigieg-pence-homophobic-comments-on-the-view-orig.cnn)
+
+![](Screenshot%202023-06-05%20at%207.31.57%20PM.png)
+
+[Elon Musk tweeted about a Jan. 6 video. Here's the truth](https://www.cnn.com/videos/politics/2023/03/16/jan-6-viral-tweets-facts-first-jm-orig.cnn)
+
+![](Screenshot%202023-06-05%20at%2011.29.22%20PM.png)
+
+These are the TikToks that I produced and edited during my time as an intern with CNN:
+
+<https://www.tiktok.com/t/ZTRwGJtpJ/>
+
+<https://www.tiktok.com/t/ZTRwg4B2w/>
